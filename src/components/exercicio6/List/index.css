@@ -1,14 +1,10 @@
-.ex6__list {
-  width: 160px;
-  margin: 0 40px;
-}
-.ex6__title {
-  color: #fec800;
-}
-
 .ex6__listItem {
   list-style-type: none;
-  color: #fff;
+  width: 110px;
+  color: #4b4b4b;
+  background-color: #fff;
+  border: 1px solid #888;
   font-weight: bold;
   line-height: 35px;
+  padding-left: 10px;
 }

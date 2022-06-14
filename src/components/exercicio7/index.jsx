@@ -36,7 +36,7 @@ function Exercicio7() {
           placeholder="Last name"
           onChange={lastNameChangeHandler}
         />
-        <button className="button">Greet Me</button>
+        <button className="ex7__button">GREET ME</button>
       </form>
     </div>
   );
