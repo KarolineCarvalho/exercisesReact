@@ -1,3 +1,13 @@
-.listItem::first-letter {
+.ex5__listItem::first-letter {
   text-transform: uppercase;
+}
+
+.ex5__listItem::marker {
+  color: #a892ee;
+  font-size: 1.5em;
+}
+
+.ex5__text {
+  color: #fff;
+  font-weight: bold;
 }
