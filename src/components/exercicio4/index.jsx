@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./index.css";
+
 function Exercicio4() {
   const [clickedTimes, setClickedTimes] = useState(0);
 
@@ -10,11 +12,15 @@ function Exercicio4() {
   };
 
   return (
-    <div>
-      <h1 className="title">Exercicio4</h1>
-      <div className="exerciseContainer">
-        <p>Button has been clicked: {clickedTimes} times</p>
-        <button onClick={clickHandle}>Click Me</button>
+    <div className="exerciseContainer">
+      <h1 className="title">Exercício 4</h1>
+      <div className="content ex4__vertical">
+        <p className="ex4__clickedTimesText">
+          Button has been clicked: {clickedTimes} times
+        </p>
+        <button className="button" onClick={clickHandle}>
+          Click Me
+        </button>
       </div>
     </div>
   );

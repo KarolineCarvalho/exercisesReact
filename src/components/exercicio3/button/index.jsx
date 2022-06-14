@@ -5,6 +5,10 @@ function Button(props) {
     alert(`You clicked on ${button}`);
   };
 
-  return <button onClick={clickedButton}>{props.buttonName}</button>;
+  return (
+    <button className="button" onClick={clickedButton}>
+      {props.buttonName}
+    </button>
+  );
 }
 export default Button;

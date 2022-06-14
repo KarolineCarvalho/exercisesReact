@@ -3,13 +3,15 @@ function Exercicio5() {
   const animals = ["dog", "cat", "chicken", "cow", "sheep", "horse"];
 
   return (
-    <div>
-      <h1 className="title">Exercicio5</h1>
-      <ul>
-        {animals.map((animal) => (
-          <li className="listItem">{animal}</li>
-        ))}
-      </ul>
+    <div className="exerciseContainer">
+      <h1 className="title">Exercício 5</h1>
+      <div>
+        <ul>
+          {animals.map((animal) => (
+            <li className="ex5__listItem ex5__text">{animal}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

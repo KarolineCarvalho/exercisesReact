@@ -1,4 +1,5 @@
 import JokeCard from "./JokeCard/JokeCard";
+import "./index.css";
 
 function Exercicio8() {
   const jokes = [
@@ -15,10 +16,17 @@ function Exercicio8() {
   ];
 
   return (
-    <div>
-      {jokes.map((joke) => (
-        <JokeCard key={joke.id} question={joke.setup} answer={joke.punchline} />
-      ))}
+    <div className="exerciseContainer">
+      <h1 className="title">Exercício 8</h1>
+      <div className="ex8__content">
+        {jokes.map((joke) => (
+          <JokeCard
+            key={joke.id}
+            question={joke.setup}
+            answer={joke.punchline}
+          />
+        ))}
+      </div>
     </div>
   );
 }

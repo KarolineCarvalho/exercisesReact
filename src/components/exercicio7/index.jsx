@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./index.css";
 
 function Exercicio7() {
   const [firstName, setFirstName] = useState("");
@@ -19,19 +20,23 @@ function Exercicio7() {
   };
 
   return (
-    <div>
-      <form onSubmit={greetMe}>
+    <div className="exerciseContainer">
+      <h1 className="title">Exercício 7</h1>
+
+      <form className="ex7__content" onSubmit={greetMe}>
         <input
+          className="ex7__input"
           type="text"
           placeholder="First name"
           onChange={firstNameChangeHandler}
         />
         <input
+          className="ex7__input"
           type="text"
           placeholder="Last name"
           onChange={lastNameChangeHandler}
         />
-        <button>Greet Me</button>
+        <button className="button">Greet Me</button>
       </form>
     </div>
   );
